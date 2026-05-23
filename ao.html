@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sơ Mi Nam | T.M.H Menswear</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="ao.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="logo">T.M.H</a>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link">Trang chủ</a>
+          <button id="size-consult-trigger" class="nav-link-btn">
+            📐 Tư vấn chọn Size
+          </button>
+        </nav>
+      </div>
+
+      <div class="nav-icons">
+        <span
+          class="auth-btn"
+          id="auth-trigger"
+          style="margin-right: 20px; cursor: pointer; font-weight: 500"
+        >
+          👤 Đăng nhập / Đăng ký
+        </span>
+        <span class="cart-btn" id="cart-trigger">
+          🛒 Giỏ hàng (<span id="cart-count">0</span>)
+        </span>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="slide active">
+        <img
+          src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=1600"
+          alt="Banner Sơ mi 1"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=1600"
+          alt="Banner Sơ mi 2"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://images.unsplash.com/photo-1520367445093-50df18aa4486?w=1600"
+          alt="Banner Sơ mi 3"
+        />
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>THẾ GIỚI SƠ MI NAM</h1>
+        <p>Tinh giản trong thiết kế - Tinh tế trong từng chi tiết</p>
+      </div>
+    </section>
+
+    <main class="container">
+      <h2 class="section-title">SƠ MI NỔI BẬT</h2>
+
+      <div class="products-grid">
+        <div
+          class="product-card"
+          data-id="p1"
+          data-price="799000"
+          data-sizes="S,M,L,XL"
+        >
+          <div class="product-image">
+            <img
+              src="anh-san-pham/san pham ao/so-mi-dai-tay-cao-cap.png"
+              alt="Sơ mi dài tay cao cấp"
+            />
+          </div>
+          <div class="product-info">
+            <p class="tag">SƠ MI DÀI TAY</p>
+            <h3 class="product-title">Sơ mi dài tay cao cấp</h3>
+            <p class="price">799.000 đ</p>
+            <button class="add-to-cart-btn">Mua Hàng</button>
+          </div>
+        </div>
+
+        <div
+          class="product-card"
+          data-id="p2"
+          data-price="350000"
+          data-sizes="S,M,L"
+        >
+          <div class="product-image">
+            <img
+              src="anh-san-pham/san pham ao/so-mi-cong-so.png"
+              alt="Sơ mi công sở "
+            />
+          </div>
+          <div class="product-info">
+            <p class="tag">SƠ MI DÀI TAY</p>
+            <h3 class="product-title">Sơ mi công sở Premium</h3>
+            <p class="price">350.000 đ</p>
+            <button class="add-to-cart-btn">Mua Hàng</button>
+          </div>
+        </div>
+
+        <div
+          class="product-card"
+          data-id="p3"
+          data-price="320000"
+          data-sizes="M,L,XL"
+        >
+          <div class="product-image">
+            <img
+              src="/anh-san-pham/san pham ao/so-mi-coc-tay-oxford.png"
+              alt="Sơ mi cộc tay Oxford"
+            />
+          </div>
+          <div class="product-info">
+            <p class="tag">SƠ MI CỘC TAY</p>
+            <h3 class="product-title">Sơ mi cộc tay Oxford</h3>
+            <p class="price">320.000 đ</p>
+            <button class="add-to-cart-btn">Mua Hàng</button>
+          </div>
+        </div>
+
+        <div
+          class="product-card"
+          data-id="p4"
+          data-price="380000"
+          data-sizes="S,M,L"
+        >
+          <div class="product-image">
+            <img
+              src="/anh-san-pham/san pham ao/so-mi-dai-tay-ke-soc.png"
+              alt="Sơ mi dài tay kẻ sọc"
+            />
+          </div>
+          <div class="product-info">
+            <p class="tag">SƠ MI DÀI TAY</p>
+            <h3 class="product-title">Sơ mi dài tay kẻ sọc</h3>
+            <p class="price">380.000 đ</p>
+            <button class="add-to-cart-btn">Mua Hàng</button>
+          </div>
+        </div>
+
+        <div
+          class="product-card"
+          data-id="p5"
+          data-price="420000"
+          data-sizes="S,M,L,XL"
+        >
+          <div class="product-image">
+            <img
+              src="/anh-san-pham/san pham ao/so-mi-coc-tay.png"
+              alt="Sơ mi cộc tay họa tiết"
+            />
+          </div>
+          <div class="product-info">
+            <p class="tag">SƠ MI CỘC TAY</p>
+            <h3 class="product-title">Sơ mi cộc tay họa tiết</h3>
+            <p class="price">420.000 đ</p>
+            <button class="add-to-cart-btn">Mua Hàng</button>
+          </div>
+        </div>
+
+        <div
+          class="product-card"
+          data-id="p6"
+          data-price="450000"
+          data-sizes="S,M,L"
+        >
+          <div class="product-image">
+            <img
+              src="/anh-san-pham/san pham ao/so-mi-lanh-co-tau (2).png"
+              alt="Sơ mi lanh cổ tàu"
+            />
+          </div>
+          <div class="product-info">
+            <p class="tag">SƠ MI DÀI TAY</p>
+            <h3 class="product-title">Sơ mi lanh cổ tàu</h3>
+            <p class="price">450.000 đ</p>
+            <button class="add-to-cart-btn">Mua Hàng</button>
+          </div>
+        </div>
+
+        <div
+          class="product-card"
+          data-id="p7"
+          data-price="390000"
+          data-sizes="M,L"
+        >
+          <div class="product-image">
+            <img
+              src="/anh-san-pham/san pham ao/so-mi-coc-tay-tron-basic.png"
+              alt="Sơ mi cộc tay trơn Basic"
+            />
+          </div>
+          <div class="product-info">
+            <p class="tag">SƠ MI CỘC TAY</p>
+            <h3 class="product-title">Sơ mi cộc tay trơn Basic</h3>
+            <p class="price">390.000 đ</p>
+            <button class="add-to-cart-btn">Mua Hàng</button>
+          </div>
+        </div>
+
+        <div
+          class="product-card"
+          data-id="p8"
+          data-price="499000"
+          data-sizes="S,M,L,XL"
+        >
+          <div class="product-image">
+            <img
+              src="/anh-san-pham/san pham ao/so-mi-lua-den-quy-phai.png"
+              alt="Sơ mi lụa đen quý phái"
+            />
+          </div>
+          <div class="product-info">
+            <p class="tag">SƠ MI DÀI TAY</p>
+            <h3 class="product-title">Sơ mi lụa đen quý phái</h3>
+            <p class="price">499.000 đ</p>
+            <button class="add-to-cart-btn">Mua Hàng</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+      <div class="cart-container">
+        <div class="cart-header">
+          <h3>GIỎ HÀNG CỦA BẠN</h3>
+          <span class="close-cart" id="close-cart">×</span>
+        </div>
+
+        <div class="cart-items-list" id="cart-items-list">
+          <p class="empty-cart-msg">Giỏ hàng của bạn đang trống.</p>
+        </div>
+
+        <div class="cart-footer">
+          <div class="cart-total-box">
+            <span>Tổng tiền:</span>
+            <span class="cart-total-price" id="cart-total-price">0 đ</span>
+          </div>
+          <button class="checkout-btn" id="checkout-btn">
+            TIẾN HÀNH THANH TOÁN
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="size-modal" class="size-modal">
+      <div class="size-modal-content">
+        <button class="close-modal-btn" id="close-size-modal">×</button>
+        <div class="modal-product-layout">
+          <img
+            id="modal-product-img"
+            src=""
+            alt="Sản phẩm"
+            class="modal-preview-img"
+          />
+          <div class="modal-product-details">
+            <h3 id="modal-product-title">Tên sản phẩm</h3>
+            <p class="modal-product-price" id="modal-product-price">0 đ</p>
+            <div class="size-selector-section">
+              <label class="section-label">Phân loại / Kích thước:</label>
+              <div class="size-options-container" id="modal-size-options"></div>
+            </div>
+            <button
+              id="modal-add-to-cart-btn"
+              class="modal-submit-btn"
+              disabled
+            >
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="consult-modal" class="consult-modal">
+      <div class="consult-modal-content">
+        <button class="close-consult-btn" id="close-consult-modal">×</button>
+        <h3>BẢNG TƯ VẤN QUY ĐỔI KÍCH CỠ SƠ MI</h3>
+        <p class="consult-subtitle">
+          Hệ thống gợi ý kích thước tiêu chuẩn dựa trên phom dáng đàn ông Việt
+          Nam
+        </p>
+
+        <table class="consult-table">
+          <thead>
+            <tr>
+              <th>Kích Cỡ (Size)</th>
+              <th>Chiều Cao (cm)</th>
+              <th>Cân Nặng (kg)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>S</strong></td>
+              <td>160 - 165 cm</td>
+              <td>50 - 55 kg</td>
+            </tr>
+            <tr>
+              <td><strong>M</strong></td>
+              <td>164 - 169 cm</td>
+              <td>56 - 63 kg</td>
+            </tr>
+            <tr>
+              <td><strong>L</strong></td>
+              <td>170 - 174 cm</td>
+              <td>64 - 72 kg</td>
+            </tr>
+            <tr>
+              <td><strong>XL</strong></td>
+              <td>174 - 180 cm</td>
+              <td>73 - 80 kg</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="consult-note">
+          <p>
+            💡
+            <em
+              >*Lưu ý: Nếu số đo chiều cao và cân nặng thuộc 2 size khác nhau,
+              quý khách nên ưu tiên chọn theo phân khúc
+              <strong>cân nặng</strong> để mặc thoải mái nhất.</em
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="auth-modal" id="auth-modal">
+      <div class="modal-box">
+        <span class="close-modal" id="close-modal"> × </span>
+
+        <div class="modal-tabs">
+          <button class="tab-btn active" id="tab-login">Đăng nhập</button>
+          <button class="tab-btn" id="tab-register">Đăng ký</button>
+        </div>
+
+        <form id="form-login" class="auth-form active">
+          <div class="input-group">
+            <label> Email </label>
+            <input type="email" required />
+          </div>
+          <div class="input-group">
+            <label> Mật khẩu </label>
+            <input type="password" required />
+          </div>
+          <button class="auth-submit-btn" type="submit">ĐĂNG NHẬP</button>
+        </form>
+
+        <form id="form-register" class="auth-form">
+          <div class="input-group">
+            <label> Email </label>
+            <input type="email" required />
+          </div>
+          <div class="input-group">
+            <label> Mật khẩu </label>
+            <input type="password" required />
+          </div>
+          <div class="input-group">
+            <label> Xác nhận mật khẩu </label>
+            <input type="password" required />
+          </div>
+          <button class="auth-submit-btn" type="submit">ĐĂNG KÝ</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>© 2026 T.M.H Menswear</footer>
+
+    <script src="ao.js"></script>
+  </body>
+</html>
